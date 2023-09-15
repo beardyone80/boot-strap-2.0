@@ -34,7 +34,7 @@
                         About
                     </a>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="myNavbarDropdown role="button"
+                    <a href="#" class="nav-link dropdown-toggle" id="myNavbarDropdown role=" button"
                         data-toggle="dropdown" aria-haspopp-"true" aria-expanded="false">
                         Whiskeys
                     </a>
@@ -93,7 +93,8 @@
                     <p class="text-muted">
                         <small>You must be over 18 to sign up to our service. Please drink responsibly.</small>
                     </p>
-                    <button class="btn btn-success btn-lg">Sign Up!</button>
+                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign
+                        Up!</button>
                 </div>
             </div>
         </section>
@@ -185,6 +186,38 @@
         </section>
     </article>
 
+    <div class="modal" tabindex="-1" id="signUpModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign-Up For Whiskey Drop</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Please enter desired password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">Repeat Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Please repeat password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
