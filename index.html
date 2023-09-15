@@ -16,24 +16,45 @@
         <a href="/" class="navbar-brand">
             Whiskey Drop
         </a>
-        <ul class="navbar-nav mr-auto">
-            <li class="active nav-item mr-2">
-                <a class="nav-link" href="/">
-                    Home
-                </a>
-            </li>
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="/about">
-                    About
-                </a>
-            </li>
-            <li class="nav-item mr-2 d-block d-md-none">
-                <a class="nav-link" href="/login">
-                    Sign In / Sign-Up!
-                </a>
-            </li>
-        </ul>
-        <div class="d-none d-md-block">
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar"
+            aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="active nav-item mr-2">
+                    <a class="nav-link" href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="/about">
+                        About
+                    </a>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="myNavbarDropdown role="button"
+                        data-toggle="dropdown" aria-haspopp-"true" aria-expanded="false">
+                        Whiskeys
+                    </a>
+                    <div class="dropdown-menu" aria-labelby="myNavbarDropdown">
+                        <a class="dropdown-item" href="#">Irish</a>
+                        <a class="dropdown-item" href="#">Scotch</a>
+                        <a class="dropdown-item" href="#">Japanese</a>
+                        <a class="dropdown-item" href="#">American</a>
+                    </div>
+
+                </li>
+                </li>
+                <li class="nav-item mr-2 d-block d-lg-none">
+                    <a class="nav-link" href="/login">
+                        Sign In / Sign-Up!
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-none d-lg-block ml-auto">
             <p class="navbar-text my-auto mr-2">
                 <i>Great whiskey delivered to your door!</i>
                 <a href="/login" class="ml-2">
@@ -42,6 +63,7 @@
             </p>
         </div>
     </nav>
+
 
     <article class="container mt-3">
 
