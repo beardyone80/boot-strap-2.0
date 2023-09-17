@@ -8,7 +8,7 @@ body {
 .callout-container {
     height: 100vh; 
     
-    background: url(../media/whiskey-splash.jpg) no-repeat center center fixed;
+    background: url(../media/whiskey-container.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -61,7 +61,7 @@ small {
 
 .btn-cta {
     font-weight: bold;
-    
+    color: azure;
     border-radius: 23px;
     width: 165px;
 
