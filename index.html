@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/79e18e76da.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -64,9 +70,9 @@
         </div>
     </nav>
 
-
-    <article class="container mt-3">
-
+    <!--.alert-container--
+    <div class="container alert-container">
+    
         <div class="row d-none d-sm-block">
             <div class="col-12">
                 <div class="alert alert-warning">
@@ -75,13 +81,23 @@
                 </div>
             </div>
         </div>
+    </div>    
+    /.alert.container-->
 
-        <section class="callout jumbotron text-center">
-            <div class="row">
-                <div class="col-12">
-                    <h1>
+
+    <!-- Jumbotron callout-->
+    <div class="callout-container container-fluid">
+        <div class="opaque-overlay"></div>
+        <div class="row">
+            <div class="col-12">
+                <section class="callout jumbotron text-center">
+
+                    <h1 class="jumbotron-header">
                         The finest whiskeys delivered to your doorstep
                     </h1>
+
+                    <hr class="block-divider">
+
                     <p class="lead">
                         Sign up today to start receiving the world's best whiskeys every month.
                         <s class="d-none d-sm-inline">£19.99</s>
@@ -93,51 +109,57 @@
                     <p class="text-muted">
                         <small>You must be over 18 to sign up to our service. Please drink responsibly.</small>
                     </p>
-                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign
+                    <button class="btn btn-lg btn-cta btn--brown" data-toggle="modal" data-target="#signUpModal">Sign
                         Up!</button>
-                </div>
+                </section>
             </div>
-        </section>
+        </div>
+    </div>
 
-        <hr>
 
-        <section class="quotes">
-            <div class="row">
-                <div class="col-12 my-5">
-                    <h2 class="text-uppercase">
-                        Quotes:
-                    </h2>
-                </div>
+    <!-- Jumbotron callout-->
+
+
+    <!-- .Quotes-container -->
+
+    <div class="container quotes-container">
+        <div class="row">
+            <div class="col-12 my-5">
+                <h2 class="text-uppercase">
+                    Quotes:
+                </h2>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="media">
-                        <div class="d-none d-sm-block">
-                            <img src="./media/girl-image.png" alt="" class="rounded-circle mr-3" height="100"
-                                width="100">
-                        </div>
-                        <blockquote class="blockquote">
-                            <p>I've been introduced to more than 10 great whiskeys I never knew about.</p>
-                            <p>- Jane Doe</p>
-                        </blockquote>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="media">
+                    <div class="d-none d-sm-block">
+                        <img src="./media/girl-image.png" alt="" class="rounded-circle mr-3" height="100" width="100">
                     </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="media">
-                        <div class="d-none d-sm-block">
-                            <img src="./media/guy-image.png" alt="" class="rounded-circle mr-3" height="100"
-                                width="100">
-                        </div>
-                        <blockquote class="blockquote">
-                            <p>I haven't been sober for months!</p>
-                            <p>- John Doe</p>
-                        </blockquote>
-                    </div>
+                    <blockquote class="blockquote">
+                        <p>I've been introduced to more than 10 great whiskeys I never knew about.</p>
+                        <p>- Jane Doe</p>
+                    </blockquote>
                 </div>
             </div>
-        </section>
+            <div class="col-12 col-md-6">
+                <div class="media">
+                    <div class="d-none d-sm-block">
+                        <img src="./media/guy-image.png" alt="" class="rounded-circle mr-3" height="100" width="100">
+                    </div>
+                    <blockquote class="blockquote">
+                        <p>I haven't been sober for months!</p>
+                        <p>- John Doe</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
 
-        <hr>
+    </div>
+    <!-- /.quotes-container -->
+
+    <!-- features-container -->
+    <div class="container features-container">
 
         <section class="features">
             <div class="row">
@@ -149,7 +171,8 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
                         <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum perferendis nostrum voluptate
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum perferendis nostrum
+                            voluptate
                             incidunt iusto numquam impedit, amet at distinctio magni harum quis aut maxime quidem,
                             officia
                             laboriosam suscipit aspernatur esse?</p>
@@ -173,9 +196,11 @@
                 <div class="col-12 d-md-none d-lg-block col-lg-4">
                     <div class="feature">
                         <h3><i class="fa-solid fa-circle-xmark d-none d-sm-inline"></i> Feature 3</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptate ducimus libero
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptate ducimus
+                            libero
                             labore
-                            ut doloribus fugit dicta iure animi autem tempora recusandae odio optio sunt dolorum placeat
+                            ut doloribus fugit dicta iure animi autem tempora recusandae odio optio sunt dolorum
+                            placeat
                             aperiam, alias cum.</p>
                         <p>
                             <a class="btn btn-sm btn-light" href="">Read More</a>
@@ -184,7 +209,8 @@
                 </div>
             </div>
         </section>
-    </article>
+    </div>
+    <!-- features-container-->
 
     <div class="modal" tabindex="-1" id="signUpModal">
         <div class="modal-dialog">
@@ -201,16 +227,19 @@
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                anyone
                                 else.</small>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Please enter desired password">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Please enter desired password">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword2">Repeat Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Please repeat password">
+                            <input type="password" class="form-control" id="exampleInputPassword2"
+                                placeholder="Please repeat password">
                         </div>
                         <button type="submit" class="btn btn-success">Submit</button>
                     </form>
