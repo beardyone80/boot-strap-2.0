@@ -117,12 +117,14 @@ small {
     border-color: #df4929;
     color: white;
         width: 165px;
+}
 
 
 /*Block Dividers*/
 .block-divider {
-    width: 75px;
+    width: 85%;
     height: 5px;
     border: 0;
-    background-color: #f50a0a;
+    background-color: #771b0f;
 }
+
