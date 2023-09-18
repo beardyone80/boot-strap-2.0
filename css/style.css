@@ -17,6 +17,7 @@ body {
     border: 0;
 }
 
+
 .navbar-brand {
     font-weight: bold;
 }
@@ -25,8 +26,18 @@ body {
     font-weight: bold;
 }
 
-.alert-container {}
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
 
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #fdcd30;
+    border-color: #fdcd30;
+}
 
 .callout-container {
     height: 100vh; 
@@ -110,9 +121,8 @@ small {
 
 /*Block Dividers*/
 .block-divider {
-    width: 75%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    width: 75px;
+    height: 5px;
     border: 0;
-    border-top: 3px solid #771b0f;
+    background-color: #f50a0a;
 }
