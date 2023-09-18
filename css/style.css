@@ -31,7 +31,7 @@ body {
 .callout-container {
     height: 100vh; 
     
-    background: url(../media/whiskey-container.jpg) no-repeat bottom right fixed;
+    background: url(../media/whiskey-container.jpg) no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
