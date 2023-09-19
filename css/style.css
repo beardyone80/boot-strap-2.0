@@ -2,6 +2,12 @@ body {
     font-family: 'nunito sans', sans-serif;
 }
 
+.container-wrapper {}
+
+.container-wrapper-red {
+    background-color: #771b0f;
+}
+
 /* Navalert container*/
 
 .navalert-container {
@@ -70,6 +76,24 @@ body {
 
 .features-container {}
 
+.features, .feature {
+    color: #fff;
+}
+
+.features i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.features .btn {
+    font-weight: bold;
+    color: #cf3b1a;
+    text-align: center;
+    border-radius: 23px;
+    min-width: 100px;
+}
+
 /* Jumbotron-header */
 
 .lead {
@@ -125,6 +149,13 @@ small {
     width: 85%;
     height: 5px;
     border: 0;
+}
+
+.block-divider-brown {
     background-color: #771b0f;
+}
+
+.block-divider-white {
+    background-color: #fff;
 }
 
